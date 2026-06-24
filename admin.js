@@ -268,48 +268,107 @@ item.id;
 const data =
 item.data();
 
-result.innerHTML =
+result.innerHTML = `
 
-`
-<div class="info-box">
+<div class="receipt-card">
 
-<h3>ID Pesanan</h3>
+<div class="receipt-header">
 
-<p>${data.orderId}</p>
+<h2>🔍 Detail Pesanan</h2>
 
-<hr>
+<p>CyberPanel Admin Panel</p>
 
-<p>
-<b>Platform :</b>
-${data.platform}
-</p>
+</div>
 
-<p>
-<b>Layanan :</b>
-${data.service}
-</p>
+<div class="receipt-body">
 
-<p>
-<b>Target :</b>
-${data.target}
-</p>
+<div class="receipt-row">
+<span class="receipt-label">
+ID Pesanan
+</span>
+<span class="receipt-value">
+${data.orderId}
+</span>
+</div>
 
-<p>
-<b>Jumlah :</b>
-${data.qty}
-</p>
-
-<p>
-<b>Total :</b>
-Rp ${data.total.toLocaleString("id-ID")}
-</p>
-
-<p>
-<b>Status :</b>
+<div class="receipt-row">
+<span class="receipt-label">
+Status
+</span>
+<span class="receipt-value">
 ${data.status}
+</span>
+</div>
+
+<div class="receipt-row">
+<span class="receipt-label">
+Platform
+</span>
+<span class="receipt-value">
+${data.platform}
+</span>
+</div>
+
+<div class="receipt-row">
+<span class="receipt-label">
+Layanan
+</span>
+<span class="receipt-value">
+${data.service}
+</span>
+</div>
+
+<div class="receipt-row">
+<span class="receipt-label">
+Target
+</span>
+<span class="receipt-value">
+${data.target}
+</span>
+</div>
+
+<div class="receipt-row">
+<span class="receipt-label">
+Jumlah
+</span>
+<span class="receipt-value">
+${data.qty}
+</span>
+</div>
+
+<div class="receipt-row">
+<span class="receipt-label">
+Estimasi
+</span>
+<span class="receipt-value">
+${data.estimate || "-"}
+</span>
+</div>
+
+<div class="receipt-total">
+
+<p>Total Pembayaran</p>
+
+<h3>
+Rp ${data.total.toLocaleString("id-ID")}
+</h3>
+
+</div>
+
+<div class="receipt-message">
+
+<h3>Manajemen Pesanan</h3>
+
+<p>
+Gunakan tombol di bawah untuk memperbarui status pesanan pelanggan.
 </p>
+
+</div>
+
+<div class="admin-action-group">
 
 <button
+class="btn-process"
 onclick="updateStatus('Diproses')">
 
 🔄 Diproses
@@ -317,6 +376,7 @@ onclick="updateStatus('Diproses')">
 </button>
 
 <button
+class="btn-success"
 onclick="updateStatus('Success')">
 
 ✅ Success
@@ -324,6 +384,7 @@ onclick="updateStatus('Success')">
 </button>
 
 <button
+class="btn-delete"
 onclick="updateStatus('Gagal')">
 
 ❌ Gagal
@@ -331,6 +392,11 @@ onclick="updateStatus('Gagal')">
 </button>
 
 </div>
+
+</div>
+
+</div>
+
 `;
 
 });
