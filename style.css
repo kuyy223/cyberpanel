@@ -1630,3 +1630,31 @@ width:100%;
 }
 
 }
+
+.admin-action-group{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:10px;
+
+margin-top:20px;
+
+}
+
+.admin-action-group button{
+
+margin-top:0;
+
+}
+
+@media(max-width:768px){
+
+.admin-action-group{
+
+grid-template-columns:1fr;
+
+}
+
+}
