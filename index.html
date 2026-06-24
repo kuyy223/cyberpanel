@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>CyberPanel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect"
+href="https://fonts.googleapis.com"><link
+href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+rel="stylesheet"><link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+body {
+  background: lime !important;
+}
+</style>
+</head><body><div class="background"></div><header><div class="logo">
+CYBERPANEL
+</div>
+<nav>
+
+<a href="#order">
+Order
+</a>
+
+<a href="cek-order.html">
+Tracking
+</a>
+
+<a href="admin.html">
+Admin
+</a>
+
+<a href="#rules">
+Rules
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</nav></header><section class="hero"><h1>
+Cyberpunk Digital Services
+</h1><p>
+Bangun audiens sosial mediamu dengan
+Layanan digital cepat,
+aman dan profesional.
+</p><div class="hero-features"><div class="feature">
+⚡ Proses Cepat
+</div><div class="feature">
+🛡 Aman
+</div><div class="feature">
+🎧 Support 24 Jam
+</div></div></section><section
+id="order"
+class="panel"><h2>
+<i class="fas fa-cart-shopping"></i>
+Buat Pesanan
+</h2><label>
+Pilih Platform
+</label><div class="platform-grid"><div
+class="platform-card"
+onclick="selectPlatform('tiktok', this)">🎵
+
+<span>
+TikTok
+</span></div><div
+class="platform-card"
+onclick="selectPlatform('instagram', this)">📷
+
+<span>
+Instagram
+</span></div><div
+class="platform-card"
+onclick="selectPlatform('whatsapp', this)">💬
+
+<span>
+WhatsApp
+</span></div></div>
+<input
+type="hidden"
+id="platform">
+
+<label>
+Pilih Layanan
+</label><div
+id="serviceContainer"
+class="service-grid"><div class="service-placeholder">Pilih platform terlebih dahulu
+
+</div></div><input
+type="hidden"
+id="service">
+
+<label>
+Link Target
+</label><input
+type="text"
+id="target"
+placeholder="https://..."
+required>
+
+<label>
+Jumlah Pesanan
+</label>
+  <input
+type="number"
+id="quantity"
+min="10"
+step="1"
+inputmode="numeric"
+value="10">
+
+<small class="min-order">
+Minimal pemesanan adalah 10
+</small><div class="info-box"><div class="info-row"><span>
+Total Harga
+</span><span id="price">
+Rp 0
+</span></div><div class="info-row"><span>
+Estimasi
+</span><span id="estimate">
+-
+</span></div>
+<div class="receipt-warning">
+
+⚠ Estimasi bersifat perkiraan dan dapat berubah sesuai antrean sistem. Simpan ID Pesanan untuk memudahkan pengecekan status pesanan.
+
+</div></div>
+<button
+onclick="showConfirmation()">
+
+📋 Konfirmasi Pesanan
+
+</button>
+</section><section class="advantages"><h2>
+Kenapa Memilih Kami?
+</h2><div class="adv-grid"><div class="adv-card">🚀
+
+<h3>
+Proses Cepat
+</h3><p>
+Pesanan diproses sesuai estimasi.
+</p></div><div class="adv-card">💰
+
+<h3>
+Harga Terjangkau
+</h3><p>
+Harga kompetitif untuk semua layanan.
+</p></div><div class="adv-card">🔒
+
+<h3>
+Aman
+</h3><p>
+Data pelanggan terjaga dengan baik.
+</p></div></div></section><section
+id="rules"
+class="rules"><h2>
+📋 Rules
+</h2><ul><li>
+Minimal pemesanan adalah 10.
+</li><li>
+Target harus valid.
+</li><li>
+Pastikan data yang dikirim benar.
+</li><li>
+Pesanan diproses setelah konfirmasi admin.
+</li><li>
+Tidak ada refund jika kesalahan berasal dari user.
+</li></ul></section><section
+id="contact"
+class="contact"><h2>
+📞 Contact
+</h2><div class="contact-box"><i class="fab fa-whatsapp"></i>
+
+<span>
+WhatsApp Admin
+</span></div><p>
++62xxxxxxxxxx
+</p></section><footer><p>
+© 2026 CyberPanel.
+All Rights Reserved.
+</p></footer>
+  <div id="orderModal" class="modal">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h2>
+📋 Konfirmasi Pesanan
+</h2>
+
+<p>
+Periksa data sebelum melanjutkan
+</p>
+
+</div>
+
+<div class="modal-body"> 
+  <div class="order-row">
+    <span class="order-label">
+        ID Pesanan
+    </span>
+
+    <div class="order-id-box">
+
+        <span
+            class="order-value"
+            id="confirmOrderId">
+            -
+        </span>
+
+        <button
+            class="copy-btn"
+            onclick="copyOrderId()">
+            📋 Salin
+        </button>
+
+    </div>
+</div>
+
+<div class="order-warning">
+    ⚠ Simpan ID Pesanan untuk melacak status pesanan.
+</div>
+  <div class="order-row">
+<span class="order-label">
+Status
+</span>
+<span
+class="order-value"
+id="confirmStatus">
+🟡 Menunggu Konfirmasi
+</span>
+</div><div class="order-row">
+<span class="order-label">
+Platform
+</span>
+<span
+class="order-value"
+id="confirmPlatform">
+</span>
+</div><div class="order-row">
+<span class="order-label">
+Layanan
+</span>
+<span
+class="order-value"
+id="confirmService">
+</span>
+</div><div class="order-row">
+<span class="order-label">
+Target
+</span>
+<span
+class="order-value"
+id="confirmTarget">
+</span>
+</div><div class="order-row">
+<span class="order-label">
+Jumlah
+</span>
+<span
+class="order-value"
+id="confirmQty">
+</span>
+</div><div class="price-box"><div class="price-title">
+Total Pembayaran
+</div><div
+class="price-value"
+id="confirmPrice">
+Rp 0
+</div><div
+class="estimate"
+id="confirmEstimate">
+-
+</div></div></div>
+
+<div class="modal-footer">
+
+<button
+class="btn-cancel"
+onclick="closeModal()">
+
+Batal
+
+</button>
+
+<button
+class="btn-whatsapp"
+onclick="sendOrder()">
+
+Pesan
+
+</button>
+
+</div>
+
+</div>
+
+  </div>
+  <script type="module" src="app.js"></script><script>
+
+const observer =
+new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform=
+"translateY(0)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll(
+'.panel,.advantages,.rules,.contact'
+).forEach(el=>{
+
+el.style.opacity="0";
+
+el.style.transform=
+"translateY(50px)";
+
+el.style.transition=
+"all .8s ease";
+
+observer.observe(el);
+
+});
+
+</script></body></html>

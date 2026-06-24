@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Cek Pesanan - CyberPanel</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="center-page">
+
+<section class="panel">
+
+<h2>🔍 Cek Status Pesanan</h2>
+
+<input
+type="text"
+id="orderId"
+placeholder="Masukkan ID Pesanan"
+>
+
+<button onclick="checkOrder()">
+Cek Pesanan
+</button>
+
+<div
+id="result"
+style="margin-top:20px;"
+></div>
+
+<button
+class="back-btn"
+onclick="window.location.href='index.html'">
+
+Kembali ke Dashboard
+
+</button>
+
+
+</section>
+</div>
+
+<script type="module" src="cek-order.js"></script>
+
+</body>
+</html>
