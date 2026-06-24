@@ -1546,3 +1546,39 @@ color:#00ffff;
 .receipt-message p {
   color : #ffff;
 }
+
+.testimonial-link{
+
+margin-top:20px;
+
+}
+
+.testimonial-link a{
+
+display:inline-block;
+
+padding:12px 20px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+color:#00ffff;
+
+border:1px solid rgba(0,255,255,.3);
+
+background:rgba(0,255,255,.05);
+
+transition:.3s;
+
+}
+
+.testimonial-link a:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 0 20px rgba(0,255,255,.3);
+
+background:rgba(0,255,255,.1);
+
+}
