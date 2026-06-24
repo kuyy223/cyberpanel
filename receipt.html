@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Struk Pesanan</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.receipt-box{
+
+max-width:700px;
+margin:30px auto;
+
+padding:25px;
+
+background:#0f1729;
+
+border-radius:20px;
+
+border:1px solid rgba(0,255,255,.2);
+
+}
+
+.receipt-box h2{
+
+text-align:center;
+margin-bottom:20px;
+color:#00ffff;
+
+}
+
+.receipt-row{
+
+display:flex;
+justify-content:space-between;
+
+padding:10px 0;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.print-btn{
+
+margin-top:20px;
+
+}
+
+.receipt-message{
+
+margin-top:25px;
+padding-top:20px;
+
+border-top:
+1px solid rgba(255,255,255,.1);
+
+text-align:center;
+
+}
+
+.receipt-message h3{
+
+color:#00ffff;
+margin-bottom:15px;
+
+}
+
+.receipt-message p{
+
+color:#d0d0d0;
+line-height:1.8;
+margin-bottom:12px;
+
+}
+
+.receipt-sign{
+
+margin-top:20px;
+color:#ffffff;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="receipt-box">
+
+<h2>🧾 Struk Pesanan</h2>
+
+<div id="receiptContent">
+
+Loading...
+
+</div>
+
+<button
+class="print-btn"
+onclick="window.print()">
+
+🖨 Cetak Struk
+
+</button>
+
+</div>
+
+<script type="module" src="receipt.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin Panel - CyberPanel</title><link rel="stylesheet" href="style.css"></head><body><div class="background"></div><div class="admin-page"><section class="panel"><!-- LOGIN ADMIN --><div id="loginBox"><h2>🔐 Admin Login</h2><label>Username</label>
+<!DOCTYPE html><html lang="id">
+<head><meta charset="UTF-8">
+
+<input
+type="text"
+id="adminUser"
+placeholder="Masukkan Username">
+
+<label>Password</label>
+
+<input
+type="password"
+id="adminPass"
+placeholder="Masukkan Password">
+
+<button onclick="adminLogin()">
+Login Admin
+</button><button
+class="back-btn"
+onclick="window.location.href='index.html'">
+
+Kembali ke Dashboard
+
+</button></div><!-- PANEL ADMIN --><div
+id="adminPanel"
+style="display:none;"><div class="admin-top-buttons"><button
+class="back-btn"
+onclick="window.location.href='index.html'">
+
+Dashboard
+
+</button><button
+class="logout-btn"
+onclick="adminLogout()">
+
+Logout
+
+</button></div><h2>🛠 Admin Panel</h2><div class="dashboard-stats"><div class="stat-card">
+<h3 id="totalOrders">0</h3>
+<p>Total Order</p>
+</div><div class="stat-card">
+<h3 id="pendingOrders">0</h3>
+<p>Pending</p>
+</div><div class="stat-card">
+<h3 id="successOrders">0</h3>
+<p>Success</p>
+</div><div class="stat-card">
+<h3 id="failedOrders">0</h3>
+<p>Gagal</p>
+</div></div><div class="table-container"><table class="admin-table"><thead><tr>
+<th>ID Pesanan</th>
+<th>Platform</th>
+<th>Status</th>
+<th>Aksi</th>
+</tr></thead><tbody id="ordersTable"></tbody></table></div></div></section></div><script type="module" src="admin.js"></script></body>
+</html>
