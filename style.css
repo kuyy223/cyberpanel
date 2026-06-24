@@ -275,6 +275,30 @@ display:block;
 margin-top:10px;
 }
 
+.platform-card i{
+
+font-size:42px;
+
+color:#00ffff;
+
+display:block;
+
+margin-bottom:10px;
+
+text-shadow:
+0 0 10px #00ffff,
+0 0 20px #00ffff;
+
+transition:.3s;
+
+}
+
+.platform-card:hover i{
+
+transform:scale(1.1);
+
+}
+
 .platform-card:hover{
 
 transform:translateY(-4px);
