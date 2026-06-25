@@ -2,7 +2,8 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Orbitron',sans-serif;
+font-family:'Poppins',sans-serif;
+
 scroll-behavior:smooth;
 }
 
@@ -53,6 +54,17 @@ color:#00ffff;
 text-shadow:
 0 0 10px #00ffff,
 0 0 20px #00ffff;
+}
+
+.logo,
+h1,
+h2,
+.price-value,
+.receipt-total h3,
+#confirmOrderId{
+
+font-family:'Orbitron',sans-serif;
+
 }
 
 nav{
