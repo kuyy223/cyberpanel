@@ -77,14 +77,14 @@ estimate:"1 - 24 jam"
 {
 id:"views",
 name:"🚀 TikTok Viral Views",
-price:2800,
+price:2000,
 estimate:"0 - 6 Jam"
 },
 
 {
 id:"likes",
 name:"❤️ TikTok Likes",
-price:8700,
+price:2600,
 estimate:"0 - 12 Jam"
 },
 
