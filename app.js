@@ -70,29 +70,32 @@ tiktok:[
 id:"followers",
 name:"👥 TikTok Followers Indonesia",
 price:21500,
-estimate:"1 - 24 jam"
-//Layanan 6554
+estimate:"1 - 24 jam",
+min:10
 },
 
 {
 id:"views",
 name:"🚀 TikTok Viral Views",
 price:2000,
-estimate:"0 - 6 Jam"
+estimate:"0 - 6 Jam",
+min:100
 },
 
 {
 id:"likes",
 name:"❤️ TikTok Likes",
 price:2600,
-estimate:"0 - 12 Jam"
+estimate:"0 - 12 Jam",
+min:100
 },
 
 {
 id:"comments",
 name:"💬 TikTok Share",
 price:3000,
-estimate:"1 - 24 jam"
+estimate:"1 - 24 jam",
+min:100
 }
 
 ],
@@ -227,24 +230,30 @@ service,
 element
 ){
 
-selectedService =
-service;
+selectedService = service;
 
 document
-.querySelectorAll(
-".service-card"
-)
+.querySelectorAll(".service-card")
 .forEach(card=>{
 
-card.classList.remove(
-"active"
-);
+card.classList.remove("active");
 
 });
 
-element.classList.add(
-"active"
-);
+element.classList.add("active");
+
+// Atur minimal order sesuai layanan
+quantity.min = service.min;
+quantity.value = service.min;
+
+// Update tulisan minimal order
+const minOrder =
+document.getElementById("minOrder");
+
+if(minOrder){
+minOrder.innerText =
+"Minimal pembelian " + service.min;
+}
 
 updatePrice();
 
@@ -364,17 +373,18 @@ return;
 
 if(
 isNaN(qty) ||
-qty < 10
+qty < selectedService.min
 ){
 
 alert(
-"Minimal pemesanan adalah 10"
+"Minimal pemesanan adalah " +
+selectedService.min
 );
 
 return;
 
 }
-
+  
 // Hitung Total Harga
 const total =
 Math.round(
@@ -478,10 +488,13 @@ parseInt(quantity.value);
 
 if(
 isNaN(qty) ||
-qty < 10
+qty < selectedService.min
 ){
 
-alert("Minimal pemesanan adalah 10");
+alert(
+"Minimal pemesanan adalah " +
+selectedService.min
+);
 
 return;
 
