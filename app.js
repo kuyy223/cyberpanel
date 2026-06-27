@@ -90,8 +90,8 @@ estimate:"0 - 12 Jam"
 
 {
 id:"comments",
-name:"💬 TikTok Comments",
-price:25400,
+name:"💬 TikTok Share",
+price:3000,
 estimate:"1 - 24 jam"
 }
 
