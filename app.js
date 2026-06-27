@@ -70,7 +70,7 @@ tiktok:[
 id:"followers",
 name:"👥 TikTok Followers Indonesia",
 price:21500,
-estimate:"127 jam 35 menit"
+estimate:"1 - 24 jam"
 //Layanan 6554
 },
 
@@ -92,7 +92,7 @@ estimate:"0 - 12 Jam"
 id:"comments",
 name:"💬 TikTok Comments",
 price:25400,
-estimate:"117 jam 30 menit"
+estimate:"1 - 24 jam"
 }
 
 ],
