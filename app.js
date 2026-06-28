@@ -35,13 +35,6 @@ const serviceData = {
 instagram:[
 
 {
-id:"followers",
-name:"👥 Instagram Followers Indonesia",
-price:39800,
-estimate:"9 jam 53 menit"
-},
-
-{
 id:"likes",
 name:"❤️ Instagram Likes Indonesia",
 price:8900,
