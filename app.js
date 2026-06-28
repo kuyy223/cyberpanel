@@ -35,6 +35,14 @@ const serviceData = {
 instagram:[
 
 {
+id:"followers",
+name:"👥 Instagram Followers Indonesia",
+price:39800,
+estimate:"9 jam 53 menit",
+min:10
+},
+
+{
 id:"likes",
 name:"❤️ Instagram Likes Indonesia",
 price:8900,
@@ -58,14 +66,6 @@ estimate:"0 - 6 Jam"
 ],
 
 tiktok:[
-
-{
-id:"followers",
-name:"👥 TikTok Followers Indonesia",
-price:21500,
-estimate:"1 - 24 jam",
-min:10
-},
 
 {
 id:"views",
