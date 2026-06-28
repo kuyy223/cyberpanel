@@ -1694,3 +1694,35 @@ grid-template-columns:1fr;
 }
 
 }
+
+.announcement-box{
+
+max-width:900px;
+margin:30px auto;
+
+padding:20px;
+
+background:rgba(255,180,0,.08);
+
+border:1px solid rgba(255,180,0,.3);
+
+border-radius:16px;
+
+text-align:center;
+
+}
+
+.announcement-box h3{
+
+color:#ffcc00;
+margin-bottom:10px;
+
+}
+
+.announcement-box p{
+
+margin-top:8px;
+line-height:1.7;
+color:#ddd;
+
+}
