@@ -1700,29 +1700,60 @@ grid-template-columns:1fr;
 max-width:900px;
 margin:30px auto;
 
-padding:20px;
+padding:25px;
 
 background:rgba(255,180,0,.08);
 
-border:1px solid rgba(255,180,0,.3);
+border:1px solid rgba(255,180,0,.35);
 
-border-radius:16px;
+border-radius:18px;
 
 text-align:center;
+
+backdrop-filter:blur(8px);
+
+box-shadow:0 0 25px rgba(255,180,0,.12);
 
 }
 
 .announcement-box h3{
 
-color:#ffcc00;
-margin-bottom:10px;
+color:#ffd54f;
+
+font-size:28px;
+
+margin-bottom:15px;
 
 }
 
 .announcement-box p{
 
-margin-top:8px;
-line-height:1.7;
-color:#ddd;
+color:#f5f5f5;
+
+font-size:16px;
+
+line-height:1.8;
+
+margin:12px 0;
+
+}
+
+.announcement-box b{
+
+color:#00ffff;
+
+}
+
+.announcement-footer{
+
+margin-top:20px;
+
+padding-top:15px;
+
+border-top:1px solid rgba(255,255,255,.15);
+
+font-weight:600;
+
+color:#ffffff;
 
 }
