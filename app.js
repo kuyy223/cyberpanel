@@ -144,7 +144,7 @@ price:8000,
 estimate:"1 - 24 Jam"
 }
 
-]
+],
 
 whatsapp:[
 
