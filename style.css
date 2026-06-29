@@ -1757,3 +1757,28 @@ font-weight:600;
 color:#ffffff;
 
 }
+
+.platform-card i{
+font-size:40px;
+margin-bottom:12px;
+}
+
+.fa-instagram{
+color:#E1306C;
+}
+
+.fa-tiktok{
+color:#ffffff;
+}
+
+.fa-whatsapp{
+color:#25D366;
+}
+
+.fa-x-twitter{
+color:#ffffff;
+}
+
+.fa-youtube{
+color:#FF0000;
+}
