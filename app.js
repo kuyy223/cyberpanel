@@ -90,21 +90,21 @@ twitter:[
 {
 id:"likes",
 name:"❤️ Tweet Likes",
-price:3000,
+price:11000,
 estimate:"0 - 12 Jam"
 },
 
 {
 id:"views",
 name:"👁 Tweet Views",
-price:1800,
+price:2400,
 estimate:"0 - 6 Jam"
 },
 
 {
 id:"repost",
 name:"🔁 Tweet Reposts",
-price:4500,
+price:31000,
 estimate:"1 - 24 Jam"
 }
 
@@ -115,21 +115,21 @@ youtube:[
 {
 id:"views",
 name:"👁 YouTube Views",
-price:2500,
+price:18000,
 estimate:"0 - 12 Jam"
 },
 
 {
 id:"likes",
 name:"❤️ YouTube Video Likes",
-price:5000,
+price:22000,
 estimate:"1 - 24 Jam"
 },
 
 {
 id:"shortviews",
 name:"🎬 YouTube Shorts Views",
-price:1800,
+price:18000,
 estimate:"0 - 6 Jam"
 }
 
@@ -140,7 +140,7 @@ snackvideo:[
 {
 id:"likes",
 name:"❤️ SnackVideo Likes",
-price:3500,
+price:8000,
 estimate:"1 - 24 Jam"
 }
 
