@@ -202,24 +202,82 @@ onclick="selectPlatform('whatsapp',this)">
 type="hidden"
 id="platform">
 
-<label>
-Pilih Layanan
-</label><div
-id="serviceContainer"
-class="service-grid"><div class="service-placeholder">Pilih platform terlebih dahulu
+<div class="section-title">
 
-</div></div><input
+<h3>
+📦 Pilih Layanan
+</h3>
+
+<p>
+Cari dan pilih layanan yang tersedia.
+</p>
+
+</div>
+
+<div class="service-search">
+
+<input
+type="text"
+id="searchService"
+placeholder="🔍 Cari layanan...">
+
+</div>
+
+<label>
+Kategori
+</label>
+
+<select
+id="category">
+
+<option>
+Pilih kategori
+</option>
+
+</select>
+
+<label>
+Layanan (Service ID)
+</label>
+
+<div
+id="serviceContainer"
+class="service-grid">
+
+<div class="service-placeholder">
+
+Silakan pilih platform terlebih dahulu
+
+</div>
+
+</div>
+
+<input
 type="hidden"
 id="service">
 
 <label>
-Link Akun/postingan
-</label><input
+🔗 Link Target
+</label>
+
+<input
 type="text"
 id="target"
-placeholder="https://..."
+placeholder="https://contoh.com/postingan"
 required>
 
+<label>
+
+📱 Nomor WhatsApp
+
+</label>
+
+<input
+type="tel"
+id="customerWhatsapp"
+placeholder="08xxxxxxxxxx"
+required>
+  
 <label>
 Jumlah Pesanan
 </label>
