@@ -96,6 +96,28 @@ section{
     padding:40px 25px;
 }
 
+.advantages{
+
+    padding:90px 20px;
+
+}
+
+.advantages h2{
+
+    text-align:center;
+
+    margin-bottom:18px;
+
+}
+
+.adv-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
 /* ========================================== */
 /* CARD */
 /* ========================================== */
