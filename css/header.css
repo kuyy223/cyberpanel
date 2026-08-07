@@ -1,20 +1,22 @@
-/* ==========================================
+/* ================================
    HEADER
-========================================== */
+================================ */
 
 .header{
 
 position:fixed;
 
-top:20px;
+top:15px;
 
 left:50%;
 
 transform:translateX(-50%);
 
-width:92%;
+width:95%;
 
-max-width:1300px;
+max-width:1200px;
+
+height:70px;
 
 display:flex;
 
@@ -22,25 +24,21 @@ align-items:center;
 
 justify-content:space-between;
 
-padding:14px 22px;
+padding:0 22px;
 
-background:rgba(15,15,15,.92);
+background:#111;
 
-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.08);
 
-border:1px solid rgba(0,255,157,.15);
-
-border-radius:20px;
-
-box-shadow:
-
-0 10px 35px rgba(0,0,0,.45);
+border-radius:18px;
 
 z-index:9999;
 
+box-sizing:border-box;
+
 }
 
-/* ========================================== */
+/* ================================ */
 
 .logo{
 
@@ -48,43 +46,37 @@ display:flex;
 
 align-items:center;
 
-gap:14px;
+gap:12px;
 
-font-family:'Orbitron',sans-serif;
+font-family:Orbitron,sans-serif;
 
-font-size:32px;
+font-size:28px;
 
 font-weight:700;
 
 color:#fff;
 
-letter-spacing:2px;
-
 white-space:nowrap;
 
 }
 
-/* ========================================== */
+/* ================================ */
 
 .logo-dot{
 
-width:18px;
+width:14px;
 
-height:18px;
-
-background:#00ff9d;
+height:14px;
 
 border-radius:50%;
 
-box-shadow:
+background:#00ff9d;
 
-0 0 15px #00ff9d,
-
-0 0 35px rgba(0,255,157,.6);
+box-shadow:0 0 15px #00ff9d;
 
 }
 
-/* ========================================== */
+/* ================================ */
 
 #navbar{
 
@@ -92,51 +84,23 @@ display:flex;
 
 align-items:center;
 
-gap:28px;
+gap:30px;
 
 }
-
-/* ========================================== */
 
 #navbar a{
 
 text-decoration:none;
 
-color:#d1d5db;
-
-font-weight:600;
+color:#ddd;
 
 font-size:15px;
 
-transition:.3s;
-
-position:relative;
-
-}
-
-/* ========================================== */
-
-#navbar a::after{
-
-content:"";
-
-position:absolute;
-
-left:0;
-
-bottom:-6px;
-
-width:0;
-
-height:2px;
-
-background:#00ff9d;
+font-weight:600;
 
 transition:.3s;
 
 }
-
-/* ========================================== */
 
 #navbar a:hover{
 
@@ -144,13 +108,7 @@ color:#00ff9d;
 
 }
 
-#navbar a:hover::after{
-
-width:100%;
-
-}
-
-/* ========================================== */
+/* ================================ */
 
 .menu-toggle{
 
@@ -160,43 +118,31 @@ background:none;
 
 border:none;
 
-color:#fff;
-
 font-size:28px;
+
+color:#fff;
 
 cursor:pointer;
 
 }
 
-/* ==========================================
-   TABLET
-========================================== */
-
-@media(max-width:900px){
-
-.logo{
-
-font-size:26px;
-
-}
-
-}
-
-/* ==========================================
+/* ================================
    MOBILE
-========================================== */
+================================ */
 
 @media(max-width:768px){
 
 .header{
 
-padding:15px 18px;
+height:65px;
+
+padding:0 18px;
 
 }
 
 .logo{
 
-font-size:24px;
+font-size:22px;
 
 }
 
@@ -210,31 +156,29 @@ display:block;
 
 position:absolute;
 
-top:82px;
+top:75px;
 
 left:0;
 
-width:100%;
+right:0;
 
-background:#121212;
+margin:auto;
 
-border-radius:18px;
+width:95%;
 
 display:none;
 
 flex-direction:column;
 
-padding:15px 0;
+background:#151515;
 
-gap:0;
+border-radius:15px;
+
+padding:12px 0;
+
+box-sizing:border-box;
 
 border:1px solid rgba(255,255,255,.08);
-
-box-shadow:
-
-0 12px 25px rgba(0,0,0,.4);
-
-overflow:hidden;
 
 }
 
@@ -242,50 +186,46 @@ overflow:hidden;
 
 display:flex;
 
-animation:slideDown .25s ease;
-
 }
 
 #navbar a{
 
 width:100%;
 
-padding:16px 22px;
+padding:14px 20px;
 
-}
-
-#navbar a:hover{
-
-background:#1d1d1d;
-
-}
-
-#navbar a::after{
-
-display:none;
+text-align:left;
 
 }
 
 }
 
-/* ========================================== */
+/* ================================
+   DESKTOP
+================================ */
 
-@keyframes slideDown{
+@media(min-width:769px){
 
-from{
+.menu-toggle{
 
-opacity:0;
-
-transform:translateY(-10px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
+display:none !important;
 
 }
 
-} 
+#navbar{
+
+display:flex !important;
+
+position:static;
+
+background:none;
+
+padding:0;
+
+width:auto;
+
+border:none;
+
+}
+
+}
