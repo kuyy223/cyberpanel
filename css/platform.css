@@ -1,0 +1,233 @@
+/* ==========================================
+   CYBERPANEL V2 - PLATFORM.CSS
+========================================== */
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.section-title{
+
+    margin:40px 0 20px;
+
+}
+
+.section-title h3{
+
+    font-size:28px;
+
+    color:#ffffff;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+}
+
+.section-title p{
+
+    color:#9ca3af;
+
+    font-size:15px;
+
+}
+
+/* ================================
+   PLATFORM GRID
+================================ */
+
+.platform-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+    gap:18px;
+
+    width:100%;
+
+    margin-top:20px;
+
+}
+
+/* ================================
+   PLATFORM CARD
+================================ */
+
+.platform-card{
+
+    background:#141414;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:18px;
+
+    padding:24px 15px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    user-select:none;
+
+}
+
+/* Hover */
+
+.platform-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#00ff9d;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,255,157,.15);
+
+}
+
+/* Active */
+
+.platform-card.active{
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    rgba(0,255,157,.15),
+
+    rgba(0,255,157,.05)
+
+    );
+
+    border-color:#00ff9d;
+
+    box-shadow:
+
+    0 0 25px rgba(0,255,157,.25);
+
+}
+
+/* Icon */
+
+.platform-card i{
+
+    font-size:42px;
+
+    color:#00ff9d;
+
+    margin-bottom:18px;
+
+}
+
+/* Nama */
+
+.platform-card span{
+
+    color:#fff;
+
+    font-weight:600;
+
+    font-size:18px;
+
+}
+
+/* Total layanan */
+
+.platform-card small{
+
+    margin-top:10px;
+
+    color:#9ca3af;
+
+    font-size:13px;
+
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media(max-width:768px){
+
+.platform-grid{
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.platform-card{
+
+    padding:22px 10px;
+
+}
+
+.platform-card i{
+
+    font-size:34px;
+
+}
+
+.platform-card span{
+
+    font-size:16px;
+
+}
+
+.platform-card small{
+
+    font-size:12px;
+
+}
+
+}
+
+@media(max-width:430px){
+
+.platform-grid{
+
+    gap:12px;
+
+}
+
+.platform-card{
+
+    padding:18px 8px;
+
+}
+
+.platform-card i{
+
+    font-size:30px;
+
+}
+
+.platform-card span{
+
+    font-size:15px;
+
+}
+
+.platform-card small{
+
+    font-size:11px;
+
+}
+
+}
