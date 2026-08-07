@@ -20,31 +20,30 @@ href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=
 rel="stylesheet"><link
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head><body><div class="background"></div><header class="navbar">
+</head><body><div class="background"></div><header class="header">
 
-<div class="logo">
-CYBERPANEL
-</div>
+    <div class="logo">
+        <span class="logo-dot"></span>
+        CYBERPANEL
+    </div>
 
-<button class="menu-toggle" onclick="toggleMenu()">
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
 
-<i class="fas fa-bars"></i>
+    <nav id="navbar">
 
-</button>
+        <a href="#order">Order</a>
 
-<nav id="navbarMenu">
+        <a href="cek-order.html">Tracking</a>
 
-<a href="#order">Order</a>
+        <a href="admin.html">Admin</a>
 
-<a href="cek-order.html">Tracking</a>
+        <a href="#rules">Rules</a>
 
-<a href="admin.html">Admin</a>
+        <a href="#contact">Contact</a>
 
-<a href="#rules">Rules</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
+    </nav>
 
 </header><section class="hero-banner">
 
@@ -694,5 +693,20 @@ el.style.transition=
 observer.observe(el);
 
 });
+
+</script>
+<script>
+
+const menuToggle =
+document.getElementById("menuToggle");
+
+const navbar =
+document.getElementById("navbar");
+
+menuToggle.onclick = function(){
+
+navbar.classList.toggle("active");
+
+}
 
 </script></body></html>
