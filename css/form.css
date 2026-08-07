@@ -1,0 +1,196 @@
+/* ==========================================
+   CYBERPANEL V2 - FORM.CSS
+========================================== */
+
+/* LABEL */
+
+label{
+
+    display:block;
+
+    margin-top:22px;
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    height:56px;
+
+    padding:0 18px;
+
+    border-radius:16px;
+
+    background:#171717;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+input::placeholder{
+
+    color:#7d7d7d;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#00ff9d;
+
+    box-shadow:
+
+    0 0 0 3px rgba(0,255,157,.12);
+
+}
+
+/* ==========================================
+   NUMBER INPUT
+========================================== */
+
+input[type=number]{
+
+    appearance:textfield;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+
+    -webkit-appearance:none;
+
+    margin:0;
+
+}
+
+/* ==========================================
+   MIN ORDER
+========================================== */
+
+.min-order{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#9ca3af;
+
+    font-size:13px;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn-order{
+
+    width:100%;
+
+    margin-top:35px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#111;
+
+    background:linear-gradient(
+        135deg,
+        #00ff9d,
+        #00d084
+    );
+
+    transition:.25s;
+
+}
+
+.btn-order:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 12px 25px rgba(0,255,157,.25);
+
+}
+
+.btn-order:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================================
+   DISABLED
+========================================== */
+
+.btn-order:disabled{
+
+    cursor:not-allowed;
+
+    opacity:.5;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+label{
+
+    font-size:14px;
+
+}
+
+input,
+select{
+
+    height:54px;
+
+    font-size:14px;
+
+}
+
+.btn-order{
+
+    height:56px;
+
+    font-size:15px;
+
+}
+
+}
