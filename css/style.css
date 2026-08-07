@@ -34,15 +34,28 @@
 }
 
 /* ===================== */
-
 *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-margin:0;
+html{
+    width:100%;
+    overflow-x:hidden;
+}
 
-padding:0;
+body{
+    width:100%;
+    overflow-x:hidden;
+}
 
-box-sizing:border-box;
-
+img,
+section,
+header,
+footer,
+div{
+    max-width:100%;
 }
 
 /* ===================== */
@@ -212,11 +225,11 @@ transparent 35%),
 /* ===================== */
 
 .container{
-
-max-width:1400px;
-
-margin:auto;
-
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+    box-sizing:border-box;
 }
 
 /* ===================== */
