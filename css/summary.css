@@ -1,0 +1,242 @@
+/* ==========================================
+   CYBERPANEL V2 - SUMMARY.CSS
+========================================== */
+
+/* ================================
+   SUMMARY CARD
+================================ */
+
+.summary-card{
+
+    width:100%;
+
+    margin-top:30px;
+
+    background:#141414;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:25px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.35);
+
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.summary-card h3{
+
+    font-size:22px;
+
+    color:#ffffff;
+
+    margin-bottom:22px;
+
+    padding-bottom:15px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ================================
+   ITEM
+================================ */
+
+.summary-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.summary-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.summary-item span{
+
+    color:#bdbdbd;
+
+    font-size:15px;
+
+}
+
+.summary-item strong{
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+/* ================================
+   PRICE
+================================ */
+
+#price{
+
+    color:#00ff9d;
+
+    font-size:24px;
+
+    font-family:'Orbitron',sans-serif;
+
+}
+
+/* ================================
+   ESTIMATE
+================================ */
+
+#estimate{
+
+    color:#ffd54a;
+
+}
+
+/* ================================
+   MIN MAX
+================================ */
+
+#minOrderValue{
+
+    color:#5ec8ff;
+
+}
+
+#maxOrderValue{
+
+    color:#ffae42;
+
+}
+
+/* ================================
+   ADMIN
+================================ */
+
+.summary-item:last-of-type strong{
+
+    color:#00ff9d;
+
+}
+
+/* ================================
+   NOTE
+================================ */
+
+.summary-note{
+
+    margin-top:22px;
+
+    padding:16px;
+
+    border-radius:15px;
+
+    background:rgba(255,193,7,.08);
+
+    border:1px solid rgba(255,193,7,.15);
+
+    color:#ffd54a;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media(max-width:768px){
+
+.summary-card{
+
+    padding:20px;
+
+}
+
+.summary-card h3{
+
+    font-size:20px;
+
+}
+
+.summary-item{
+
+    padding:13px 0;
+
+}
+
+.summary-item span{
+
+    font-size:14px;
+
+}
+
+.summary-item strong{
+
+    font-size:14px;
+
+}
+
+#price{
+
+    font-size:21px;
+
+}
+
+.summary-note{
+
+    font-size:13px;
+
+}
+
+}
+
+@media(max-width:430px){
+
+.summary-card{
+
+    padding:18px;
+
+}
+
+.summary-item{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:6px;
+
+}
+
+.summary-item strong{
+
+    width:100%;
+
+}
+
+#price{
+
+    font-size:20px;
+
+}
+
+}
