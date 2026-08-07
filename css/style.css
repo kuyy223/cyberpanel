@@ -1,0 +1,298 @@
+/* ===================================
+   CYBERPANEL V2
+   GLOBAL STYLE
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+--primary:#00ff9d;
+--primary-dark:#00c97b;
+--secondary:#00e5ff;
+
+--danger:#ff4d6d;
+--warning:#ffb703;
+--success:#22c55e;
+
+--bg:#090909;
+--bg2:#111111;
+--card:#181818;
+
+--border:#262626;
+
+--text:#ffffff;
+--text2:#bdbdbd;
+
+--radius:18px;
+
+--shadow:
+0 0 25px rgba(0,255,157,.15);
+
+--transition:.30s;
+
+}
+
+/* ===================== */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+/* ===================== */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+/* ===================== */
+
+body{
+
+font-family:"Poppins",sans-serif;
+
+background:var(--bg);
+
+color:var(--text);
+
+overflow-x:hidden;
+
+}
+
+/* ===================== */
+
+body::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+body::-webkit-scrollbar-thumb{
+
+background:var(--primary);
+
+border-radius:20px;
+
+}
+
+/* ===================== */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* ===================== */
+
+button{
+
+font-family:"Poppins",sans-serif;
+
+cursor:pointer;
+
+border:none;
+
+outline:none;
+
+}
+
+/* ===================== */
+
+input,
+
+textarea,
+
+select{
+
+font-family:"Poppins",sans-serif;
+
+outline:none;
+
+}
+
+/* ===================== */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/* ===================== */
+
+section{
+
+padding:80px 8%;
+
+}
+
+/* ===================== */
+
+h1{
+
+font-size:48px;
+
+font-family:"Orbitron",sans-serif;
+
+font-weight:700;
+
+}
+
+h2{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+font-family:"Orbitron",sans-serif;
+
+}
+
+h3{
+
+font-size:22px;
+
+}
+
+p{
+
+line-height:1.7;
+
+color:var(--text2);
+
+}
+
+/* ===================== */
+
+.background{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+z-index:-1;
+
+background:
+
+radial-gradient(circle at top left,
+
+rgba(0,255,157,.15),
+
+transparent 40%),
+
+radial-gradient(circle at bottom right,
+
+rgba(0,229,255,.12),
+
+transparent 35%),
+
+#090909;
+
+}
+
+/* ===================== */
+
+.container{
+
+max-width:1400px;
+
+margin:auto;
+
+}
+
+/* ===================== */
+
+.section-title{
+
+margin-bottom:30px;
+
+}
+
+.section-title h3{
+
+font-size:28px;
+
+margin-bottom:8px;
+
+color:white;
+
+}
+
+.section-title p{
+
+font-size:15px;
+
+color:#9ca3af;
+
+}
+
+/* ===================== */
+
+.card{
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+}
+
+/* ===================== */
+
+.glow{
+
+box-shadow:
+
+0 0 20px rgba(0,255,157,.25);
+
+}
+
+/* ===================== */
+
+.hidden{
+
+display:none;
+
+}
+
+/* ===================== */
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(30px);
+
+transition:.5s;
+
+}
+
+.fade-up.show{
+
+opacity:1;
+
+transform:none;
+
+  }
