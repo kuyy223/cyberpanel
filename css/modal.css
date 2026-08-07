@@ -1,0 +1,369 @@
+/* ==========================================
+   CYBERPANEL V2 - MODAL.CSS
+========================================== */
+
+/* BACKGROUND */
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(10px);
+
+    padding:20px;
+
+    z-index:99999;
+
+}
+
+/* ================================ */
+
+.modal-content{
+
+    width:100%;
+
+    max-width:560px;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    background:#141414;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.45);
+
+    animation:modalShow .25s ease;
+
+}
+
+/* ================================ */
+
+.modal-header{
+
+    padding:25px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.modal-header h2{
+
+    color:#fff;
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+.modal-header p{
+
+    color:#9ca3af;
+
+}
+
+/* ================================ */
+
+.modal-body{
+
+    padding:25px;
+
+}
+
+/* ================================ */
+
+.order-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    padding:14px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.order-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.order-label{
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
+.order-value{
+
+    color:#fff;
+
+    text-align:right;
+
+    font-weight:600;
+
+    word-break:break-word;
+
+}
+
+/* ================================ */
+
+.order-id-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.copy-btn{
+
+    border:none;
+
+    background:#00ff9d;
+
+    color:#111;
+
+    padding:8px 14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.copy-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ================================ */
+
+.order-warning{
+
+    margin:18px 0;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:rgba(255,193,7,.08);
+
+    color:#ffd54a;
+
+    border:1px solid rgba(255,193,7,.2);
+
+    font-size:14px;
+
+}
+
+/* ================================ */
+
+.price-box{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+
+        180deg,
+
+        rgba(0,255,157,.12),
+
+        rgba(0,255,157,.04)
+
+    );
+
+    text-align:center;
+
+}
+
+.price-title{
+
+    color:#9ca3af;
+
+    margin-bottom:12px;
+
+}
+
+.price-value{
+
+    color:#00ff9d;
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+.estimate{
+
+    color:#ffd54a;
+
+}
+
+/* ================================ */
+
+.modal-footer{
+
+    padding:25px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ================================ */
+
+.btn-whatsapp{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #00ff9d,
+
+        #00d084
+
+    );
+
+    color:#111;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.btn-whatsapp:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 12px 30px rgba(0,255,157,.25);
+
+}
+
+/* ================================ */
+
+@keyframes modalShow{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px) scale(.96);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+/* ================================ */
+
+@media(max-width:768px){
+
+.modal-content{
+
+    max-width:100%;
+
+}
+
+.modal-header h2{
+
+    font-size:24px;
+
+}
+
+.order-row{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.order-value{
+
+    text-align:left;
+
+}
+
+.order-id-box{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.price-value{
+
+    font-size:28px;
+
+}
+
+.btn-whatsapp{
+
+    font-size:15px;
+
+}
+
+      }
