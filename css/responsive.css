@@ -1,0 +1,278 @@
+/* ==========================================
+   CYBERPANEL V2
+   RESPONSIVE.CSS
+========================================== */
+
+/* ==========================================
+   DESKTOP BESAR
+========================================== */
+
+@media (min-width:1400px){
+
+.container{
+
+max-width:1320px;
+
+margin:auto;
+
+}
+
+}
+
+/* ==========================================
+   LAPTOP
+========================================== */
+
+@media (max-width:1200px){
+
+.container{
+
+padding:0 20px;
+
+}
+
+.hero-content{
+
+max-width:100%;
+
+}
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:992px){
+
+.container{
+
+padding:0 18px;
+
+}
+
+.section-title h3{
+
+font-size:26px;
+
+}
+
+.summary-card{
+
+margin-top:25px;
+
+}
+
+.modal-content{
+
+width:95%;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+html{
+
+font-size:15px;
+
+}
+
+body{
+
+overflow-x:hidden;
+
+}
+
+.container{
+
+padding:0 15px;
+
+}
+
+.panel{
+
+padding:25px 18px;
+
+}
+
+.announcement-box{
+
+padding:18px;
+
+}
+
+.announcement-box h3{
+
+font-size:20px;
+
+}
+
+.section-title{
+
+margin:25px 0 15px;
+
+}
+
+.section-title h3{
+
+font-size:22px;
+
+}
+
+.section-title p{
+
+font-size:14px;
+
+}
+
+label{
+
+font-size:14px;
+
+}
+
+}
+
+/* ==========================================
+   HP KECIL
+========================================== */
+
+@media (max-width:480px){
+
+html{
+
+font-size:14px;
+
+}
+
+.container{
+
+padding:0 12px;
+
+}
+
+.panel{
+
+padding:20px 15px;
+
+border-radius:18px;
+
+}
+
+.section-title h3{
+
+font-size:20px;
+
+}
+
+.announcement-box{
+
+padding:15px;
+
+}
+
+.summary-card{
+
+padding:18px;
+
+}
+
+}
+
+/* ==========================================
+   FIX OVERFLOW
+========================================== */
+
+*{
+
+max-width:100%;
+
+box-sizing:border-box;
+
+}
+
+img{
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+}
+
+iframe{
+
+max-width:100%;
+
+}
+
+table{
+
+display:block;
+
+overflow-x:auto;
+
+}
+
+pre{
+
+overflow-x:auto;
+
+}
+
+code{
+
+word-break:break-word;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+height:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#00ff9d;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#00d684;
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+background:#00ff9d;
+
+color:#000;
+
+}
