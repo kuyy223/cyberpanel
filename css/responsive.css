@@ -1,7 +1,72 @@
 /* ==========================================
    CYBERPANEL V2
    RESPONSIVE.CSS
+   FULL REVISION
 ========================================== */
+
+
+/* ==========================================
+   GLOBAL RESPONSIVE SAFETY
+========================================== */
+
+html{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+img,
+video,
+iframe{
+    max-width:100%;
+}
+
+img{
+    height:auto;
+    display:block;
+}
+
+iframe{
+    border:0;
+}
+
+table{
+    max-width:100%;
+}
+
+pre{
+    max-width:100%;
+    overflow-x:auto;
+}
+
+code{
+    word-break:break-word;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 
 /* ==========================================
    DESKTOP BESAR
@@ -9,15 +74,38 @@
 
 @media (min-width:1400px){
 
-.container{
+    .container{
+        max-width:1320px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 
-max-width:1320px;
+    .hero-content{
+        max-width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 
-margin:auto;
+    .advantages{
+        max-width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .rules{
+        max-width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .contact{
+        max-width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 
 }
 
-}
 
 /* ==========================================
    LAPTOP
@@ -25,19 +113,31 @@ margin:auto;
 
 @media (max-width:1200px){
 
-.container{
+    .container{
+        width:100%;
+        max-width:100%;
+        padding-left:24px;
+        padding-right:24px;
+    }
 
-padding:0 20px;
+    .hero-content{
+        width:100%;
+        max-width:1100px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .advantages,
+    .rules,
+    .contact{
+        width:100%;
+        max-width:1100px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 
 }
 
-.hero-content{
-
-max-width:100%;
-
-}
-
-}
 
 /* ==========================================
    TABLET
@@ -45,31 +145,118 @@ max-width:100%;
 
 @media (max-width:992px){
 
-.container{
+    .container{
+        padding-left:20px;
+        padding-right:20px;
+    }
 
-padding:0 18px;
+    /* ---------- SECTION ---------- */
+
+    section{
+        width:100%;
+        max-width:100%;
+    }
+
+    section h2{
+        text-align:center;
+    }
+
+    /* ---------- HERO ---------- */
+
+    .hero-content{
+        width:100%;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    /* ---------- SECTION TITLE ---------- */
+
+    .section-title{
+        width:100%;
+        text-align:center;
+    }
+
+    .section-title h3{
+        font-size:26px;
+        text-align:center;
+    }
+
+    .section-title p{
+        text-align:center;
+    }
+
+    /* ---------- ADVANTAGES ---------- */
+
+    .advantages{
+        width:100%;
+        max-width:100%;
+        padding-left:20px;
+        padding-right:20px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .advantages h2{
+        text-align:center;
+    }
+
+    .adv-grid{
+        width:100%;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* ---------- RULES ---------- */
+
+    .rules{
+        width:100%;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .rules h2{
+        text-align:center;
+    }
+
+    /* ---------- CONTACT ---------- */
+
+    .contact{
+        width:100%;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:20px;
+        padding-right:20px;
+        text-align:center;
+    }
+
+    .contact h2{
+        text-align:center;
+    }
+
+    /* ---------- SUMMARY ---------- */
+
+    .summary-card{
+        width:100%;
+        max-width:100%;
+        margin-top:25px;
+    }
+
+    /* ---------- MODAL ---------- */
+
+    .modal-content{
+        width:94%;
+        max-width:600px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 
 }
 
-.section-title h3{
-
-font-size:26px;
-
-}
-
-.summary-card{
-
-margin-top:25px;
-
-}
-
-.modal-content{
-
-width:95%;
-
-}
-
-}
 
 /* ==========================================
    MOBILE
@@ -77,67 +264,473 @@ width:95%;
 
 @media (max-width:768px){
 
-html{
+    html{
+        font-size:15px;
+        width:100%;
+        overflow-x:hidden;
+    }
 
-font-size:15px;
+    body{
+        width:100%;
+        min-width:0;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+
+    /* ======================================
+       CONTAINER
+    ====================================== */
+
+    .container{
+        width:100%;
+        max-width:100%;
+        padding-left:15px;
+        padding-right:15px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    /* ======================================
+       SECTION
+    ====================================== */
+
+    section{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
+
+    /* ======================================
+       PANEL / ORDER
+    ====================================== */
+
+    .panel{
+        width:100%;
+        max-width:100%;
+        padding:30px 18px;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:22px;
+    }
+
+
+    /* ======================================
+       SECTION TITLE
+    ====================================== */
+
+    .section-title{
+        width:100%;
+        max-width:100%;
+        margin:35px auto 20px;
+        text-align:center;
+    }
+
+    .section-title h3{
+        margin:0 auto 8px;
+
+        font-size:22px;
+        line-height:1.4;
+
+        text-align:center;
+    }
+
+    .section-title p{
+        margin:0 auto;
+
+        font-size:14px;
+        line-height:1.6;
+
+        text-align:center;
+    }
+
+
+    /* ======================================
+       ANNOUNCEMENT
+    ====================================== */
+
+    .announcement-box{
+        width:100%;
+        max-width:100%;
+        padding:18px;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:18px;
+    }
+
+    .announcement-box h3{
+        font-size:20px;
+        line-height:1.4;
+    }
+
+    .announcement-box p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+
+    /* ======================================
+       PLATFORM
+    ====================================== */
+
+    .platform-grid{
+        width:100%;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .platform-card{
+        min-width:0;
+        max-width:100%;
+    }
+
+
+    /* ======================================
+       SERVICE
+    ====================================== */
+
+    .service-grid{
+        width:100%;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .service-card{
+        min-width:0;
+        max-width:100%;
+    }
+
+
+    /* ======================================
+       FORM
+    ====================================== */
+
+    form,
+    input,
+    select,
+    textarea,
+    button{
+        max-width:100%;
+    }
+
+    input,
+    select,
+    textarea{
+        width:100%;
+        min-width:0;
+    }
+
+    label{
+        display:block;
+        max-width:100%;
+        font-size:14px;
+    }
+
+
+    /* ======================================
+       QUANTITY
+    ====================================== */
+
+    #quantity{
+        width:100%;
+        max-width:100%;
+    }
+
+    .min-order{
+        display:block;
+        max-width:100%;
+        line-height:1.5;
+    }
+
+
+    /* ======================================
+       SUMMARY
+    ====================================== */
+
+    .summary-card{
+        width:100%;
+        max-width:100%;
+        margin:25px auto 0;
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .summary-item{
+        width:100%;
+        min-width:0;
+    }
+
+    .summary-item span,
+    .summary-item strong{
+        min-width:0;
+    }
+
+    .summary-note{
+        width:100%;
+        max-width:100%;
+        line-height:1.6;
+    }
+
+
+    /* ======================================
+       ORDER BUTTON
+    ====================================== */
+
+    .btn-order{
+        width:100%;
+        max-width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    /* ======================================
+       ADVANTAGES
+    ====================================== */
+
+    .advantages{
+        width:100%;
+        max-width:100%;
+
+        margin:0 auto;
+
+        padding:70px 18px 60px;
+
+        text-align:center;
+
+        box-sizing:border-box;
+    }
+
+    .advantages h2{
+        width:100%;
+        max-width:520px;
+
+        margin:0 auto 35px;
+
+        padding:0 8px;
+
+        font-family:'Orbitron',sans-serif;
+
+        font-size:28px;
+
+        line-height:1.35;
+
+        text-align:center;
+    }
+
+    .adv-grid{
+        width:100%;
+        max-width:520px;
+
+        margin:0 auto;
+
+        display:flex;
+        flex-direction:column;
+
+        gap:14px;
+    }
+
+    .adv-card{
+        width:100%;
+        max-width:100%;
+
+        min-height:0;
+
+        padding:20px;
+
+        margin:0;
+
+        border-radius:20px;
+
+        text-align:left;
+
+        box-sizing:border-box;
+    }
+
+    .adv-card h3{
+        margin:8px 0 5px;
+
+        font-size:19px;
+
+        line-height:1.4;
+    }
+
+    .adv-card p{
+        margin:0;
+
+        font-size:14px;
+
+        line-height:1.6;
+    }
+
+
+    /* ======================================
+       RULES
+    ====================================== */
+
+    .rules{
+        width:100%;
+        max-width:100%;
+
+        margin:20px auto 0;
+
+        padding:35px 20px;
+
+        box-sizing:border-box;
+
+        text-align:left;
+    }
+
+    .rules h2{
+        width:100%;
+
+        margin:0 auto 25px;
+
+        font-size:28px;
+
+        line-height:1.35;
+
+        text-align:center;
+    }
+
+    .rules ul{
+        width:100%;
+
+        margin:0 auto;
+        padding-left:20px;
+
+        box-sizing:border-box;
+    }
+
+    .rules li{
+        margin-bottom:10px;
+
+        font-size:14px;
+
+        line-height:1.6;
+    }
+
+
+    /* ======================================
+       CONTACT
+    ====================================== */
+
+    .contact{
+        width:100%;
+        max-width:100%;
+
+        margin:25px auto 0;
+
+        padding:35px 20px;
+
+        box-sizing:border-box;
+
+        text-align:center;
+    }
+
+    .contact h2{
+        margin:0 auto 25px;
+
+        font-size:28px;
+
+        text-align:center;
+    }
+
+    .contact-box{
+        width:100%;
+        max-width:400px;
+
+        margin:0 auto 15px;
+    }
+
+    .contact p{
+        text-align:center;
+
+        font-size:14px;
+
+        line-height:1.6;
+    }
+
+    .testimonial-link{
+        text-align:center;
+    }
+
+
+    /* ======================================
+       FOOTER
+    ====================================== */
+
+    footer{
+        width:100%;
+        max-width:100%;
+
+        padding:40px 20px;
+
+        text-align:center;
+
+        box-sizing:border-box;
+    }
+
+    footer p{
+        margin:5px 0;
+
+        font-size:12px;
+
+        line-height:1.6;
+
+        text-align:center;
+    }
+
+
+    /* ======================================
+       MODAL
+    ====================================== */
+
+    .modal{
+        padding:15px;
+
+        box-sizing:border-box;
+    }
+
+    .modal-content{
+        width:100%;
+        max-width:500px;
+
+        max-height:90vh;
+
+        margin:auto;
+
+        overflow-y:auto;
+
+        border-radius:20px;
+    }
+
+    .modal-header{
+        padding:20px;
+    }
+
+    .modal-header h2{
+        font-size:21px;
+    }
+
+    .modal-body{
+        padding:20px;
+    }
+
+    .modal-footer{
+        padding:15px 20px;
+    }
+
+    .btn-whatsapp{
+        width:100%;
+    }
 
 }
 
-body{
-
-overflow-x:hidden;
-
-}
-
-.container{
-
-padding:0 15px;
-
-}
-
-.panel{
-
-padding:25px 18px;
-
-}
-
-.announcement-box{
-
-padding:18px;
-
-}
-
-.announcement-box h3{
-
-font-size:20px;
-
-}
-
-.section-title{
-
-margin:25px 0 15px;
-
-}
-
-.section-title h3{
-
-font-size:22px;
-
-}
-
-.section-title p{
-
-font-size:14px;
-
-}
-
-label{
-
-font-size:14px;
-
-}
-
-}
 
 /* ==========================================
    HP KECIL
@@ -145,134 +738,398 @@ font-size:14px;
 
 @media (max-width:480px){
 
-html{
+    html{
+        font-size:14px;
+    }
 
-font-size:14px;
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+
+    /* ======================================
+       CONTAINER
+    ====================================== */
+
+    .container{
+        width:100%;
+        max-width:100%;
+
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+
+    /* ======================================
+       PANEL
+    ====================================== */
+
+    .panel{
+        width:100%;
+        max-width:100%;
+
+        padding:25px 15px;
+
+        border-radius:18px;
+    }
+
+
+    /* ======================================
+       SECTION TITLE
+    ====================================== */
+
+    .section-title{
+        margin:30px auto 18px;
+    }
+
+    .section-title h3{
+        font-size:20px;
+        line-height:1.4;
+    }
+
+    .section-title p{
+        font-size:13px;
+    }
+
+
+    /* ======================================
+       ANNOUNCEMENT
+    ====================================== */
+
+    .announcement-box{
+        width:100%;
+        max-width:100%;
+
+        padding:15px;
+
+        border-radius:16px;
+    }
+
+    .announcement-box h3{
+        font-size:18px;
+    }
+
+    .announcement-box p{
+        font-size:13px;
+        line-height:1.7;
+    }
+
+
+    /* ======================================
+       ADVANTAGES
+    ====================================== */
+
+    .advantages{
+        padding:55px 15px 50px;
+    }
+
+    .advantages h2{
+        font-size:25px;
+
+        line-height:1.4;
+
+        margin-bottom:28px;
+    }
+
+    .adv-grid{
+        width:100%;
+        max-width:100%;
+
+        gap:12px;
+    }
+
+    .adv-card{
+        padding:18px;
+
+        border-radius:18px;
+    }
+
+    .adv-card h3{
+        font-size:18px;
+    }
+
+    .adv-card p{
+        font-size:13px;
+        line-height:1.6;
+    }
+
+
+    /* ======================================
+       RULES
+    ====================================== */
+
+    .rules{
+        margin-top:15px;
+
+        padding:30px 18px;
+
+        border-radius:18px;
+    }
+
+    .rules h2{
+        font-size:25px;
+
+        margin-bottom:22px;
+    }
+
+    .rules ul{
+        padding-left:18px;
+    }
+
+    .rules li{
+        font-size:13px;
+
+        margin-bottom:8px;
+
+        line-height:1.6;
+    }
+
+
+    /* ======================================
+       CONTACT
+    ====================================== */
+
+    .contact{
+        margin-top:15px;
+
+        padding:30px 18px;
+
+        border-radius:18px;
+    }
+
+    .contact h2{
+        font-size:25px;
+    }
+
+    .contact p{
+        font-size:13px;
+    }
+
+
+    /* ======================================
+       SUMMARY
+    ====================================== */
+
+    .summary-card{
+        padding:18px;
+
+        border-radius:18px;
+    }
+
+
+    /* ======================================
+       MODAL
+    ====================================== */
+
+    .modal{
+        padding:10px;
+    }
+
+    .modal-content{
+        width:100%;
+
+        border-radius:18px;
+    }
+
+    .modal-header{
+        padding:18px;
+    }
+
+    .modal-body{
+        padding:18px;
+    }
+
+    .modal-header h2{
+        font-size:19px;
+    }
 
 }
 
-.container{
-
-padding:0 12px;
-
-}
-
-.panel{
-
-padding:20px 15px;
-
-border-radius:18px;
-
-}
-
-.section-title h3{
-
-font-size:20px;
-
-}
-
-.announcement-box{
-
-padding:15px;
-
-}
-
-.summary-card{
-
-padding:18px;
-
-}
-
-}
 
 /* ==========================================
-   FIX OVERFLOW
+   VERY SMALL PHONE
 ========================================== */
 
-*{
+@media (max-width:360px){
 
-max-width:100%;
+    .container{
+        padding-left:10px;
+        padding-right:10px;
+    }
 
-box-sizing:border-box;
+    .panel{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    .advantages{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    .advantages h2{
+        font-size:23px;
+    }
+
+    .adv-card{
+        padding:16px;
+    }
+
+    .adv-card h3{
+        font-size:17px;
+    }
+
+    .adv-card p{
+        font-size:12px;
+    }
+
+    .rules{
+        padding:25px 15px;
+    }
+
+    .rules h2{
+        font-size:23px;
+    }
 
 }
 
-img{
 
-max-width:100%;
+/* ==========================================
+   HORIZONTAL OVERFLOW PROTECTION
+========================================== */
 
-height:auto;
+@media (max-width:768px){
 
-display:block;
+    .header,
+    .hero-banner,
+    .panel,
+    .advantages,
+    .rules,
+    .contact,
+    footer{
+        max-width:100vw;
+    }
+
+    .platform-grid,
+    .service-grid,
+    .adv-grid{
+        max-width:100%;
+    }
+
+    .hero-content,
+    .panel,
+    .advantages,
+    .rules,
+    .contact{
+        overflow-x:hidden;
+    }
+
+}
+
+
+/* ==========================================
+   TABLET / DESKTOP ADVANTAGES
+========================================== */
+
+@media (min-width:769px){
+
+    .advantages{
+        width:100%;
+        max-width:1200px;
+
+        margin:0 auto;
+
+        padding:90px 24px;
+
+        box-sizing:border-box;
+    }
+
+    .advantages h2{
+        margin:0 auto 45px;
+
+        text-align:center;
+
+        font-family:'Orbitron',sans-serif;
+
+        font-size:36px;
+
+        line-height:1.3;
+    }
+
+    .adv-grid{
+        width:100%;
+        max-width:1200px;
+
+        margin:0 auto;
+
+        display:grid;
+
+        grid-template-columns:
+            repeat(3,minmax(0,1fr));
+
+        gap:22px;
+    }
+
+    .adv-card{
+        width:100%;
+        min-width:0;
+
+        padding:28px;
+
+        min-height:150px;
+
+        box-sizing:border-box;
+
+        text-align:left;
+    }
+
+    .adv-card h3{
+        margin:10px 0 6px;
+
+        font-size:20px;
+    }
+
+    .adv-card p{
+        margin:0;
+
+        font-size:14px;
+
+        line-height:1.6;
+    }
 
 }
 
-iframe{
-
-max-width:100%;
-
-}
-
-table{
-
-display:block;
-
-overflow-x:auto;
-
-}
-
-pre{
-
-overflow-x:auto;
-
-}
-
-code{
-
-word-break:break-word;
-
-}
 
 /* ==========================================
    SCROLLBAR
 ========================================== */
 
 ::-webkit-scrollbar{
-
-width:8px;
-
-height:8px;
-
+    width:8px;
+    height:8px;
 }
 
 ::-webkit-scrollbar-track{
-
-background:#111;
-
+    background:#111;
 }
 
 ::-webkit-scrollbar-thumb{
-
-background:#00ff9d;
-
-border-radius:10px;
-
+    background:#00ff9d;
+    border-radius:10px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-
-background:#00d684;
-
+    background:#00d684;
 }
+
 
 /* ==========================================
    SELECTION
 ========================================== */
 
 ::selection{
-
-background:#00ff9d;
-
-color:#000;
-
-}
+    background:#00ff9d;
+    color:#000;
+       }
